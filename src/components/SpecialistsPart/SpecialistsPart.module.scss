@@ -1,0 +1,67 @@
+.wordsBlockWrapper {
+  padding: 10px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blockHeader {
+  text-align: center;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 40px;
+    color: #111;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 6px;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #34db93;
+  }
+}
+
+.wordsBlockGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blockCard {
+  border: 2px solid #34db93;
+  border-radius: 16px;
+  padding: 25px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+
+  &:hover {
+    background: #34db935e; 
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
