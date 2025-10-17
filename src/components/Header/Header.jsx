@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo} onClick={closeMobileMenu}>
+        <Link href="\" className={styles.logo} onClick={closeMobileMenu}>
           BalanceHub
         </Link>
 
@@ -55,13 +55,13 @@ const Header = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/ourCenter" className={styles.link}>Our Center</Link>
+            <Link href="\" className={styles.link}>Our Center</Link>
             {isDropdownOpen && (
               <ul className={styles.dropdownMenu}>
                 <li><Link href="/ourCenter/about" className={styles.dropdownLink}>About Us</Link></li>
                 <li><Link href="/ourCenter/services" className={styles.dropdownLink}>Our Services</Link></li>
                 <li><Link href="/ourCenter/to-therapists" className={styles.dropdownLink}>For Therapists</Link></li>
-                <li><Link href="/ourCenter/contact" className={styles.dropdownLink}>Contacts</Link></li>
+                <li><Link href="/contact" className={styles.dropdownLink}>Contacts</Link></li>
               </ul>
             )}
           </div>
@@ -86,7 +86,7 @@ const Header = () => {
             </button>
 
             <div className={styles.mobileLinks}>
-              <Link href="/ourCenter" className={styles.mobileLink} onClick={closeMobileMenu}>
+              <Link href="\" className={styles.mobileLink} onClick={closeMobileMenu}>
                 Our Center
               </Link>
               <div className={styles.mobileSubmenu}>
@@ -99,7 +99,7 @@ const Header = () => {
                 <Link href="/ourCenter/to-therapists" className={styles.mobileLink} onClick={closeMobileMenu}>
                   For Therapists
                 </Link>
-                <Link href="/ourCenter/contact" className={styles.mobileLink} onClick={closeMobileMenu}>
+                <Link href="/contact" className={styles.mobileLink} onClick={closeMobileMenu}>
                   Contacts
                 </Link>
               </div>

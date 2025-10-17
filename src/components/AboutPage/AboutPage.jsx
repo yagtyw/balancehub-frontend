@@ -103,7 +103,7 @@ const OurCenter = () => {
         <h2>Want to work with us?</h2>
         <div className={styles.ctaButtons}>
           <Link href="/specialists" className={styles.link}>Meet our team</Link>
-          <Link href="/join" className={styles.ctaButton}>Join as a therapist</Link>
+          <Link href="/ourCenter/to-therapists" className={styles.ctaButton}>Join as a therapist</Link>
         </div>
       </section>
     </div>
