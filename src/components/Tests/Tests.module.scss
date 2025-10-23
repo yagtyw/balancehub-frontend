@@ -1,0 +1,111 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.specialistLink {
+  color: #34db93;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.testsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: 720px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testCard {
+  background: #ffffff;
+  border: 1px solid #e7e9ee;
+  border-radius: 16px;
+  padding: 36px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+
+  &:hover {
+    border-color: #cfd4e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.testHeader {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+.testSubtitle {
+  font-size: 14.5px;
+  color: #666;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.noteBlock {
+  background: #34db931b;
+  border: 1px solid #e0e6f0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: left;
+  line-height: 1.7;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.noteTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #19a568;
+}
+
+.noteText {
+  font-size: 16px;
+  color: #444;
+
+  strong {
+    font-weight: 600;
+    color: #222;
+  }
+}
+
+.noteLink {
+  color: #34db93;
+  font-weight: 600;
+  text-decoration: underline;
+}
