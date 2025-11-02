@@ -1,11 +1,11 @@
 'use client'
 
 import React, { useState } from 'react'
-import styles from './PTSDTest.module.scss'
-import tests from "../../data/testsData.js"
+import styles from '../PTSDTest/PTSDTest.module.scss'
+import tests from '../../data/testsData.js'
 
-const PTSDTest = () => {
-  const test = tests.find((t) => t.slug === 'ptsd')
+const BARTest = () => {
+  const test = tests.find((t) => t.slug === 'bar')
   if (!test) {
     return <div>Test not found</div>;
   }
@@ -44,11 +44,17 @@ const PTSDTest = () => {
   return (
     <div className={styles.page}>
       <h1 className={styles.title}>{test.title}</h1>
+
+      <div className={styles.topBlock}>
+        <p>{test.description}</p>
+        <h2>{test.subTitle}</h2>
+      </div>
+
       <div className={styles.layout}>
         <div className={styles.left}>
-          <div className={styles.instruction}>
-            <p>{test.instruction}</p>
-          </div>
+            <div className={styles.instruction}>
+                <p>{test.instruction}</p>
+            </div>
           <div className={styles.decoding}>
             <h3>Decoding the results</h3>
             <p>{test.decoding}</p>
@@ -112,11 +118,11 @@ const PTSDTest = () => {
             <div className={styles.result}>
               <h2>Your result: {score} / {test.questions.length}</h2>
               {score < test.threshold ? (
-                <p>No clear signs of PTSD were detected.</p>
+                <p>No clear signs of burnout were detected.</p>
               ) : (
                 <p>
-                  The score indicates possible post-traumatic stress symptoms.  
-                  It is recommended to consult a mental health professional.
+                  The score indicates possible signs of burnout.  
+                  It is recommended to take rest and consult a psychologist if needed.
                 </p>
               )}
               <button className={styles.restart} onClick={restartTest}>
@@ -130,4 +136,4 @@ const PTSDTest = () => {
   )
 }
 
-export default PTSDTest
+export default BARTest
