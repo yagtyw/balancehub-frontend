@@ -77,6 +77,49 @@ const tests = [
       "I took more medications (sedatives, anxiolytics, stimulants).",
     ],
   },
+  {
+  id: 3,
+  slug: "psychosomatics",
+  title: "Online Psychosomatic Symptoms Test",
+  description: 
+    `The psychosomatic tests and questionnaires presented on this page are used to assess the relationship between a person's mental state and their physical health.
+    They can help identify links between physical ailments and various psychological factors such as stress, anxiety, and depression.
+    These psychosomatic questionnaires are typically used by our psychologists to select the most suitable therapeutic approach.
+    However, you can also take the test yourself to better understand your emotional state.`,
+  subTitle: "Psychosomatic Complaints Questionnaire",
+  instruction: `Please assess how much each of the following problems bothered you during the past four weeks. `,
+  decoding: `<strong>Result interpretation:</strong><br/>
+    0-4: minimal somatic load<br/>
+    5-9: low somatic load<br/>
+    10-14: moderate somatic load<br/>
+    15-30: high somatic load<br/><br/>
+    A somatoform disorder* may be diagnosed at ≥10 points.<br/>
+    *Somatoform disorder — a condition with physical symptoms that cannot be medically explained.`,
+  type: "scale",
+  threshold: 15,
+  questions: [
+    "Stomach pain.",
+    "Back pain.",
+    "Pain in the arms, legs, or joints (knees, hips, etc.).",
+    "Menstrual pain or any discomfort associated with the menstrual cycle.",
+    "Headache.",
+    "Chest pain.",
+    "Dizziness.",
+    "Fainting.",
+    "The feeling of a strong heartbeat.",
+    "Dyspnea.",
+    "Pain or discomfort during sexual intercourse.",
+    "Constipation or diarrhea.",
+    "Nausea, flatulence, or upset stomach.",
+    "Feeling tired or lack of energy.",
+    "Sleep problems.",
+  ],
+  options: [
+    { text: "Did not bother me at all", value: 0 },
+    { text: "Bothered me a little", value: 1 },
+    { text: "Bothered me a lot", value: 2 }
+  ]
+}
 ];
 
 export default tests;

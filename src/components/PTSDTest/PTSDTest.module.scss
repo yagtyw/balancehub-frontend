@@ -249,3 +249,39 @@
   margin-bottom: 24px;
 
 }
+
+.verticalOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+
+  @media (max-width: 899px) {
+    align-items: center;
+  }
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #1b3c2e;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  input[type="radio"] {
+    accent-color: #1b3c2e;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  span {
+    line-height: 1.5;
+  }
+
+  &:hover span {
+    color: #34db93;
+  }
+}
