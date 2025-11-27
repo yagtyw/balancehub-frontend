@@ -10,13 +10,12 @@ The frontend is developed with **React** and **Next.js**, following modern web d
 Currently implemented pages:
 - **Home page**
 - **For Therapists** — application form for psychologists who want to join
-
-Planned pages and features:
 - **Our Center** — About Us, Services, Contacts
 - **Specialists** — directory of psychologists with detailed profiles
 - **Tests & Exercises** — interactive self-assessment tools and guided exercises
+- - **Contact Form** — request submission with validation and feedback
+Planned pages and features:
 - **Blog** — mental health articles with filtering and search
-- **Contact Form** — request submission with validation and feedback
 
 ---
 
